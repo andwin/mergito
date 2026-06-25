@@ -12,12 +12,12 @@ const displayHelp = (
   console.log(
     commandLineUsage([
       {
-        header: 'Mergit',
+        header: 'Mergito',
         content: 'CLI tool for merging Git branches.',
       },
       {
         header: 'Usage',
-        content: 'mergit <targetBranch> [options]',
+        content: 'mergito <targetBranch> [options]',
       },
       {
         header: 'Options',

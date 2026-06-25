@@ -10,7 +10,7 @@ const run = async () => {
     process.exit(0)
   }
 
-  console.log('mergit', commandLineArguments)
+  console.log('mergito', commandLineArguments)
 }
 
 run().catch((e) => {
