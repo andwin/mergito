@@ -1,7 +1,6 @@
 #!/usr/bin/env node
 
 import commandLineArgs from 'command-line-args'
-import { execa } from 'execa'
 import commandLineArgsDefinitions from './utils/command_line_args_definitions'
 import displayHelp from './utils/display_help'
 import getWorkingBranch from './utils/get_working_branch'
