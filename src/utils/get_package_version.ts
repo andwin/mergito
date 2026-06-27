@@ -1,0 +1,19 @@
+import { readFileSync } from 'node:fs'
+import { findPackageJSON } from 'node:module'
+import { pathToFileURL } from 'node:url'
+
+const getPackageVersion = () => {
+  try {
+    const packageJsonPath = findPackageJSON(pathToFileURL(__filename).href)
+    if (!packageJsonPath) {
+      throw new Error('Could not find package.json')
+    }
+    const { version } = JSON.parse(readFileSync(packageJsonPath, 'utf8'))
+    return version
+  } catch {
+    console.error('Could not find package.json')
+    process.exit(1)
+  }
+}
+
+export default getPackageVersion

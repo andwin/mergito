@@ -13,6 +13,12 @@ const commandLineArgsDefinitions: OptionDefinitionWithDescription[] = [
     defaultOption: true,
     description: 'Branch to merge the current branch into.',
   },
+  {
+    name: 'version',
+    alias: 'v',
+    type: Boolean,
+    description: 'Display the version number.',
+  },
 ]
 
 export default commandLineArgsDefinitions
